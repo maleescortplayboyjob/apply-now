@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maleescortplayboyjob.github.io/apply-now/sitemap.xml
