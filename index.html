@@ -15,23 +15,95 @@ content="playboy job, call boy job, male escort job, gigolo job, escort job for 
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4}
-.header{background:#c0392b;color:#fff;padding:18px;text-align:center;font-size:26px;font-weight:bold}
+
+.header{
+  background:#c0392b;
+  color:#fff;
+  padding:15px 10px 10px;
+  text-align:center;
+}
+
+.header img{
+  max-width:140px;
+  height:auto;
+  display:block;
+  margin:0 auto 6px;
+}
+
+.header .title{
+  font-size:26px;
+  font-weight:bold;
+}
+
 .container{background:#fff;padding:15px}
-.register{background:#c0392b;color:#fff;padding:12px 28px;border-radius:6px;font-weight:bold;display:inline-block;cursor:pointer}
-.register-msg{display:none;margin-top:8px;font-size:14px;font-weight:600}
-.hero{max-width:920px;margin:20px auto;border-radius:12px;overflow:hidden}
+
+.register{
+  background:#c0392b;
+  color:#fff;
+  padding:12px 28px;
+  border-radius:6px;
+  font-weight:bold;
+  display:inline-block;
+  cursor:pointer
+}
+
+.register-msg{
+  display:none;
+  margin-top:8px;
+  font-size:14px;
+  font-weight:600
+}
+
+.hero{
+  max-width:920px;
+  margin:20px auto;
+  border-radius:12px;
+  overflow:hidden
+}
+
 .hero img{width:100%;display:block}
+
 .states{display:flex;flex-wrap:wrap;gap:10px}
-.state{background:#e74c3c;color:#fff;padding:10px 16px;border-radius:6px;cursor:pointer}
-.footer{text-align:center;padding:15px;font-size:13px;color:#666}
-.whatsapp{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center}
+
+.state{
+  background:#e74c3c;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:6px;
+  cursor:pointer
+}
+
+.footer{
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  color:#666
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
 .whatsapp img{width:34px}
 </style>
 </head>
 
 <body>
 
-<div class="header" id="mainHeading">Playboy Job</div>
+<!-- HEADER WITH LOGO -->
+<div class="header">
+  <img src="logo.jpg.png" alt="Male Escort Playboy Job">
+  <div class="title" id="mainHeading">Playboy Job</div>
+</div>
 
 <div class="container">
 
@@ -59,10 +131,10 @@ High income opportunity with flexible work.
 
 </div>
 
-<div class="footer">@ 2026 All Rights Reserved</div>
+<div class="footer">© 2026 All Rights Reserved</div>
 
-<a class="whatsapp" 
-href="https://wa.me/917830038748?text=Please%20send%20details" 
+<a class="whatsapp"
+href="https://wa.me/917830038748?text=Please%20send%20details"
 target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
@@ -94,7 +166,7 @@ cities.forEach(city=>{
  d.innerText=city;
  d.onclick = ()=>{
   window.location.href = "cities/" + city.toLowerCase() + ".html";
-};
+ };
  cityBox.appendChild(d);
 });
 
