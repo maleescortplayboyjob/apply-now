@@ -50,7 +50,7 @@ High income opportunity with flexible work.
 </p>
 
 <div class="hero">
-  <img src="https://i.postimg.cc/dtqhGjYX/1718.jpg" alt="Playboy Call Boy Job">
+  <img src="https://i.postimg.cc/MHMrLS7h/1718.jpg" alt="Playboy Call Boy Job">
 </div>
 
 <h2>Select Your City</h2>
@@ -92,7 +92,9 @@ cities.forEach(city=>{
  const d = document.createElement("div");
  d.className="state";
  d.innerText=city;
- d.onclick=()=>loadCity(city);
+ d.onclick = ()=>{
+  window.location.href = "cities/" + city.toLowerCase() + ".html";
+};
  cityBox.appendChild(d);
 });
 
