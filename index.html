@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title id="pageTitle">Playboy Job | Call Boy Job | Male Escort Job</title>
+
+<meta name="description" id="metaDesc"
+content="Apply for playboy job, call boy job and male escort job in India. City wise high income opportunity.">
+
+<meta name="keywords" id="metaKeys"
+content="playboy job, call boy job, male escort job, gigolo job, escort job for men, high income job">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4}
+.header{background:#c0392b;color:#fff;padding:18px;text-align:center;font-size:26px;font-weight:bold}
+.container{background:#fff;padding:15px}
+.register{background:#c0392b;color:#fff;padding:12px 28px;border-radius:6px;font-weight:bold;display:inline-block;cursor:pointer}
+.register-msg{display:none;margin-top:8px;font-size:14px;font-weight:600}
+.hero{max-width:920px;margin:20px auto;border-radius:12px;overflow:hidden}
+.hero img{width:100%;display:block}
+.states{display:flex;flex-wrap:wrap;gap:10px}
+.state{background:#e74c3c;color:#fff;padding:10px 16px;border-radius:6px;cursor:pointer}
+.footer{text-align:center;padding:15px;font-size:13px;color:#666}
+.whatsapp{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.whatsapp img{width:34px}
+</style>
+</head>
+
+<body>
+
+<div class="header" id="mainHeading">Playboy Job</div>
+
+<div class="container">
+
+<div>
+  <div class="register" onclick="showMsg()">Register Now</div>
+  <div class="register-msg" id="regMsg">
+    Contact our agent on WhatsApp to register
+  </div>
+</div>
+
+<h1 id="subHeading">Playboy / Call Boy / Male Escort Job</h1>
+
+<p id="content">
+Apply for playboy job, call boy job and male escort job in your city.
+High income opportunity with flexible work.
+</p>
+
+<div class="hero">
+  <img src="https://i.postimg.cc/MHMrLS7h/1718.jpg" alt="Playboy Call Boy Job">
+</div>
+
+<h2>Select Your City</h2>
+
+<div class="states" id="cityList"></div>
+
+</div>
+
+<div class="footer">@ 2026 All Rights Reserved</div>
+
+<a class="whatsapp" 
+href="https://wa.me/917830038748?text=Please%20send%20details" 
+target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<script>
+function showMsg(){
+ document.getElementById("regMsg").style.display="block";
+}
+
+const cities = [
+"Bangalore","Ahmedabad","Delhi","Lucknow","Mumbai","Nagpur","Chennai",
+"Jaipur","Pune","Amravati","Bhopal","Hyderabad","Indore","Kolkata","Patna",
+"Surat","Vishakapatnam","Amritsar","Aurangabad","Chandigarh","Mohali",
+"Jammu","Ranchi","Ujjain","Ludhiana","Jalandhar","Udaipur",
+"Coimbatore","Varanasi"
+];
+
+const baseKeywords = [
+"playboy job","call boy job","male escort job","gigolo job",
+"escort job for men","playboy service","call boy service",
+"male escort service","high income job","escort job apply"
+];
+
+const cityBox = document.getElementById("cityList");
+
+cities.forEach(city=>{
+ const d = document.createElement("div");
+ d.className="state";
+ d.innerText=city;
+ d.onclick=()=>loadCity(city);
+ cityBox.appendChild(d);
+});
+
+function loadCity(city){
+
+ document.getElementById("mainHeading").innerText =
+   "Playboy Job in " + city;
+
+ document.getElementById("subHeading").innerText =
+   "Playboy / Call Boy / Male Escort Job in " + city;
+
+ document.getElementById("content").innerText =
+   "Apply for playboy job in " + city +
+   ", call boy job in " + city +
+   " and male escort job in " + city +
+   ". High income opportunity available.";
+
+ document.getElementById("pageTitle").innerText =
+   "Playboy Job in " + city +
+   " | Call Boy Job in " + city +
+   " | Male Escort Job";
+
+ document.getElementById("metaDesc").content =
+   "Playboy job in " + city +
+   ", call boy job in " + city +
+   ", male escort job in " + city +
+   ". Contact on WhatsApp to register.";
+
+ let keys=[];
+ baseKeywords.forEach(k=>{
+   keys.push(k+" "+city);
+   keys.push(city+" "+k);
+ });
+ document.getElementById("metaKeys").content = keys.join(", ");
+
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
